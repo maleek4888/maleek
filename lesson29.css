@@ -1,0 +1,59 @@
+div{
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    animation-name: x;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-direction: reverse; */
+    /* animation-iteration-count: 5; */
+    /* translate: 900px 0px; */
+}
+/* @keyframes x{
+    from{
+        background-color: orange;
+    }
+   to{
+    background-color: rgb(115, 255, 0);
+   }
+
+} */
+@keyframes  x{
+    0%{
+        background-color: brown;
+        translate: 0 0;
+        rotate: 0deg;
+    }
+    25%{
+        background-color: blue;
+        translate: 400px 0;
+        rotate: 90deg;
+    }
+    50%{
+        background-color: gold;
+        translate: 400px  400px;
+        rotate: 180deg;
+    }
+     75%{
+        background-color: red;
+        translate: 0 400px;
+        rotate: 270deg;
+    }
+    100%{
+         background-color: blueviolet;
+         translate: 0 0;
+        rotate: 360deg;
+
+    }
+
+
+}
+div:hover{
+    animation-play-state: running;
+}
+
+
+
